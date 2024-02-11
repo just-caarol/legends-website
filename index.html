@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Legends of Krakow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <!-- main navbar with links to the each legend -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight" style="position: relative">
+          <img src="./images/bagel.png" alt="Logo" width="47" height="47" class="d-inline-block align-text-center" />
+          <img src="./images/information.png" alt="Info" width="27" height="27"
+            class="infoBagel d-inline-block align-text-center" />
+        </button>
+
+        <a class="navbar-brand mb-0 mx-2 h1" href="#">
+          The Legends of Krakow
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-tab">
+            <li class="nav-item">
+              <a class="nav-link" href="#dragon">The legend of The Wawel Dragon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#talkinghead">The legend about a talking head</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trumpeter">The Legend of The Trumpeter of St. Mary's Basilica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mariackibrothers">The Legend of The Two Brothers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rynekpigeons">The Legend of The Enchanted Pigeons</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">It's not a Bagel, it's an Obwarzanek</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div>
+          Obwarzanek Krakowski (that's how it's called in Polish) is a braided pretzel in the shape of a ring. It is an
+          official symbol of Kraków.
+        </div>
+        <div>
+          <a href="https://www.flaticon.com/free-icons/bagel" title="bagel icons">Bagel icons created by Freepik -
+            Flaticon</a> <br />
+          <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik -
+            Flaticon</a>
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            See more
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item"
+                href="https://findingfoodfluency.wordpress.com/2022/07/27/its-not-a-bagel-its-an-obwarzanek-krakow-poland/">What
+                is Krakow Obwarzanek?</a></li>
+            <li><a class="dropdown-item" href="https://www.muzeumobwarzanka.com/?lang=en">The Interactive Museum of
+                Obwarzanek</a></li>
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Krak%C3%B3w">Krakow in Wikipedia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- carousel with pictures of Krakow -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <img src="./images/wawelwnocy.jpg" class="d-block w-100" alt="Wawel Castle in Krakow">
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="./images/rynekglowny.jpg" class="d-block w-100" alt="Krakow Main Market Square">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/wawel.jpg" class="d-block w-100" alt="Wawel Castle in Krakow">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- navabr with a sentence about Krakow -->
+  <nav class="navbar bg-body-tertiary bg-dark border-bottom border-body mb-8" data-bs-theme="dark">
+    <div class="container-fluid">
+      <figure class="text-md-center">
+        <figcaption class="fst-italic text-white p-3 ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote"
+            viewbox="0 0 16 16">
+            <path
+              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+          </svg>
+          From the baroque castle to the gothic cathedral and pastel-hued buildings, with an incredible green
+          ladscape for a backdrop, Krakow is a storybook setting worthy of a fairy tale.
+          The city dates back to the 8th century, making Krakow full of ancient legends and epic stories to tell.
+        </figcaption>
+      </figure>
+    </div>
+  </nav>
+
+  <!-- main content with pictures and text of each legend -->
+  <main>
+    <section class="container">
+      <div data-bs-spy="scroll" data-bs-target="mainNavbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <!-- The legend of The Wawel Dragon -->
+        <div id="dragon" class="row no-gutters align-items-center justify-content-between mt-1 akapit">
+          <div class="card col-xxl-6" style="width: 40rem">
+            <img src="./images/waweldragonfire.jpg" class="card-img-top img-fluid ptcard" alt="Wawel dragon">
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">The legend of The Wawel Dragon
+                <button class="btn btn-secondary mx-1" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Photo by
+                </button>
+                <div class="collapse" id="collapseExample">
+                  <a
+                    href="https://unsplash.com/@hubatxz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hubert
+                    Buratynski</a> on <a
+                    href="https://unsplash.com/photos/a-crowd-of-people-standing-around-a-fire-pit-gp1iZOxzAAs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </div>
+              </h5>
+            </div>
+          </div>
+          <div class="col-xxl-6 order-2 order-xxl-1 d-flex flex-column align-items-center text-center">
+            <img src="./images/bagel.png" width="45" height="45" class="m-3" alt="bagel icon">
+            <p>Krakow's oldest tale dates back at least to the 13th century, when it was included in a Polish chronicle.
+              Legend has it that Smok Wawelski, the Wawel Dragon, roamed the area's villages, eating anything that moved
+              and destroying the king's land. This beastly monster preyed on livestock, and when there were no sheep
+              left to eat, devoured villagers (some sources insist that it only devoured virgins). Hoping to save the
+              people of Wawel from the dragon, the King offered his own daughter up as a prize to any knight who could
+              slay the dragon. This offer was to no avail, every knight who attempted to kill the dragon was either
+              eaten or instantly turned into ash by a ball of fire. Until one day, a humble shoemaker named Skuba came
+              along. He decided to slit his own sheep in half. He stuffed the sheep with flammable sulphur, sewed its
+              stomach back up, and fed it to the dragon. The dragon immediately ran to the Vistula River to extinguish
+              the burning meal, but it drank so much water that its stomach exploded into tiny pieces. The city of Wawel
+              was saved from the dragon and Skuba became the people's new hero. Skuba married the king's daughter and
+              became a prince.
+            </p>
+            <p>Today, you can see a statue of the dragon just below Wawel Hill, by the river. Every four minutes, flames
+              shoot from its mouth.</p>
+          </div>
+        </div>
+
+        <!-- The legend about a talking head -->
+        <div id="talkinghead" class="d-flex row no-gutters align-items-center justify-content-between mt-6 akapit">
+          <div class="col-xxl-6 order-2 order-xxl-1 d-flex flex-column align-items-center text-center">
+            <img src="./images/bagel.png" width="45" height="45" class=" m-3" alt="bagel icon">
+            <p>One of the most impressive rooms of Wawel Royal Castle is the Envoys' Room, due to its interesting
+              ceiling with the sculptures of tiny heads. These are portraits of nobility and burghers. Sculptures
+              symbolise the openness of Polish Kings to the daily problems of all people.
+              It is no coincidence because in the Envoys' Room, audiences and trials took place. However, one of the
+              heads does not match the others, because its mouth is gaged. </p>
+            <p>The legend dated back to King Sigismund August's times says: one of the merchants in the Krakow Cloth
+              Hall sold beautifully decorated belts. Unfortunately, a thief showed up and stole one of them. He was
+              noticed, and people in the crowd started to scream: "catch the thief!". The villain, feeling that he would
+              not run away, decided to stealthily throw away the item. A poor widow noticed the belt on the ground. No
+              sooner had she picked it up, and started to look for the owner than she was caught and accused of theft.
+              The explanations were useless, and the woman was brought to the King. That day, the Monarch was extremely
+              tired. He listened only to the crowd, and he did not even allow the woman to speak - she had been caught
+              with a stolen item, so the fault seemed to be obvious.
+              She got a prison sentence. The desperate woman shouted: "If no one wants to stand up for me, let those
+              wooden heads speak at least!". Suddenly, silence fell over the room. One of the heads came to life and
+              said: “Rex Auguste, iudica iuste” (Latin: judge fairly, King Augustus) then fell silent again. Although
+              the King was offended by the questioning of his sentence, he sent his people to the market to investigate
+              the matter. The king's envoys quickly found many witnesses who testified that they saw the man throw the
+              belt away. The case was discontinued, but the king ordered to gag the talking head so that no one would
+              ever interfere with his judgement again.</p>
+          </div>
+          <div class="card col-xxl-6 order-1 order-xxl-2" style="width: 40rem">
+            <img src="./images/glowy2.jpg" class="card-img-top img-fluid ptcard" alt="Wawel talking head">
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">The legend about a talking head
+                <button class="btn btn-secondary mx-1" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                  Photo from
+                </button>
+                <div class="collapse" id="collapseExample2">
+                  <a
+                    href="https://krakowbooking.com/blog/the-wawel-dragon-and-other-legends-of-the-krakow-castle">Krakowbooking.com</a>
+                </div>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Legend of The Trumpeter of St. Mary's Basilica -->
+        <div id="trumpeter" class="row no-gutters align-items-center justify-content-between mt-6 akapit2">
+          <div class="card col-md-6" style="width: 40rem">
+            <img src="./images/hejnalwiezai.jpg" class="card-img-top ptcard" alt="trumpeter of St. Mary's Basilica">
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">The Legend of The Trumpeter of St. Mary's Basilica
+                <button class="btn btn-secondary mx-1 mt-1" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                  Photo from
+                </button>
+                <div class="collapse" id="collapseExample3">
+                  <a href="https://en.wikipedia.org/wiki/St._Mary%27s_Trumpet_Call">Wikipedia</a>
+                </div>
+              </h5>
+            </div>
+          </div>
+          <div class="d-flex flex-column col-md-6 align-items-center">
+            <img src="./images/bagel.png" width="45" height="45" class="m-3" alt="bagel icon">
+            <p>Krakow is surrounded by 150 churches, many of them designed in a unique Polish gothic style, including
+              St. Mary's Basilica, which you can find on Rynek Główny, the main square. In the 13th century, when the
+              Mongols attacked Krakow, a watchman appeared from the window of the original basilica to sound the alarm,
+              warning the town of invasion with a specific melody called hejnal. Sadly, before the watchman could finish
+              his song, he was shot in the throat by an arrow. Today, every hour from the top window of the church's
+              south tower, a trumpeter appears, playing the same melody
+              to the four corners of the world. But don't expect to hear the full song. The trumpeter stops the song
+              just short of the ending, as a symbol of the legend and victim. Now when you visit the basilica you will
+              know why the trumpeter ends their performance so abruptly.</p>
+          </div>
+        </div>
+
+        <!-- The Legend of The Two Brothers -->
+        <div id="mariackibrothers" class="row no-gutters align-items-center justify-content-between mt-6 akapit2">
+          <div class="d-flex flex-column col-md-6 order-2 order-xxl-1 align-items-center">
+            <img src="./images/bagel.png" width="45" height="45" class="m-3" alt="bagel icon">
+            <p>Looking at St. Mary's two towers you might wonder why the towers are different heights. The current
+              church was built in the 14th century, after the original was destroyed by Mongol invaders. For its
+              construction, King Boleslaus decided to hire two brothers to build two towers, one on each side. The older
+              brother built the south tower and the younger brother built the north tower. When the younger brother
+              noticed that the south tower was taller and better than his, he became enraged with jealousy. He stabbed
+              and killed his older sibling with a knife so that he could no longer build a better tower. The next day,
+              he was consumed with so much guilt and remorse for killing his own brother, that he jumped from the tower
+              to his death. Today, the murderer's knife can be seen hanging in Rynek Główny's Cloth Hall.</p>
+          </div>
+          <div class="card col-md-6 order-1 order-xxl-2" style="width: 40rem;">
+            <img src="./images/mariackizchoinkanoc.jpg" class="card-img-top ptcard" height="770"
+              alt="St. Mary's Basilica">
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">The Legend of The Two Brothers
+                <button class="btn btn-secondary mx-1" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                  Photo by
+                </button>
+                <div class="collapse" id="collapseExample4">
+                  <a
+                    href="https://unsplash.com/@dbr0vskyi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yevhenii
+                    Dubrovskyi</a> on <a
+                    href="https://unsplash.com/photos/a-christmas-tree-in-front-of-a-large-building-lpeOGbQ7eqg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </div>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Legend of The Enchanted Pigeons -->
+        <div id="rynekpigeons" class="row no-gutters align-items-center justify-content-between mt-6 mb-10 akapit2">
+          <div class="card col-md-6" style="width: 40rem;">
+            <img src="./images/golebie.jpg" class="card-img-top ptcard"
+              alt="Pigeons flyuing above Krakow's Main Market Square">
+            <div class="card-body d-flex justify-content-center">
+              <h5 class="card-title">The Legend of The Enchanted Pigeons
+                <button class="btn btn-secondary mx-1" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                  Photo by
+                </button>
+                <div class="collapse" id="collapseExample5">
+                  <a
+                    href="https://unsplash.com/@marttisalmi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Martti
+                    Salmi</a> on <a
+                    href="https://unsplash.com/photos/a-flock-of-birds-flying-over-a-city-5aJrRVT3RYo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </div>
+              </h5>
+            </div>
+          </div>
+          <div class="d-flex flex-column col-md-6 align-items-center">
+            <img src="./images/bagel.png" width="45" height="45" class="m-3" alt="bagel icon">
+            <p>The pigeons, flocks of whom fill up Krakow's Main Market Square, are no ordinary birds. Once upon a time,
+              they were placed under a spell.
+              This legend holds that the pigeons of Kraków are enchanted. When the Kraków throne was assumed by Prince
+              Henryk IV Probus in the 13th century, the Piast monarch greatly desired to unite all the Polish lands and
+              crown himself king. Yet he had no money. A witch came and offered him assistance: she transmuted the
+              Prince's warriors into pigeons. They flew up to St Mary's Church and began to peck out little pebbles
+              which, falling to the ground, were turning into gold coins. The Prince collected the gold and went to Rome
+              to acquire the Pope's support in obtaining the Crown. Yet on his way he indulged in feasting, merrymaking,
+              and… lost all the money. He never reached Rome and he never returned to Kraków again either, while his
+              retainers remain enchanted and still waiting for their Prince...</p>
+          </div>
+        </div>
+
+        <!-- an arrow that send tothe top of the site -->
+        <div class="position-relative">
+          <a class="btn position-fixed bottom-0 end-0 mb-2 bg-light color-white" id="goTopBtn" href="#">
+            <img src="./images/arrow-up2.png" width="23px" height="23px" alt="an arrow icon">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- footer -->
+  <footer class="footer mt-4 py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Copyright &#169; JC, <span id="year"></span></span>
+      <span>
+        <p>
+          Photos, graphics and text were used to create this website only for educational purposes. <br />
+          Text comes from: www.krakowbooking.com/blog/the-wawel-dragon-and-other-legends-of-the-krakow-castle and
+          https://jaywaytravel.com/blog/legends-of-krakow <br />
+          Carousel photos are from: https://pl.wikipedia.org/wiki/Kraków
+        </p>
+      </span>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+  <script>
+    const goTopBtn = document.getElementById("goTopBtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      const gap = 500;
+      const isVisible = document.body.scrollTop > gap || document.documentElement.scrollTop > gap
+      goTopBtn.style.display = isVisible ? "flex" : "none";
+    }
+
+    function addCopyrightYear() {
+      const date = new Date().getFullYear();
+      const copyrightYear = document.querySelector('#year');
+      copyrightYear.textContent = date;
+    }
+
+    addCopyrightYear()
+  </script>
+</body>
+
+</html>

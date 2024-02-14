@@ -3,6 +3,8 @@
 body {
   background-color: #ebebeb;
   padding-top: 20px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
 }
 
 .infoBagel {
@@ -43,9 +45,20 @@ body {
 }
 
 
+
+@media(max-width:1400px) {
+  .legendImage {
+    margin: 0 auto;
+  }
+}
+
 @media(max-width:768px) {
   .carousel .carousel-inner {
     height: auto
+  }
+
+  .legendImage {
+    margin: 0 auto;
   }
 }
 
@@ -53,11 +66,14 @@ body {
 @media (max-width: 576px) {
   .order-xs-1 {
     order: 1 !important;
-
   }
 
   .order-xs-2 {
     order: 2 !important;
-
   }
+
+  .legendImage {
+    margin: 0 auto;
+  }
+
 }
